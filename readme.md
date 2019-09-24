@@ -3,3 +3,5 @@ TEst
 
 
 ![](ManyLines.gif)
+
+![](ALLCOMBINED.gif)
