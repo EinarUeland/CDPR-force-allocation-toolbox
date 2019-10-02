@@ -3,6 +3,3 @@ This will be the repository for the CDPR-force-allocation-toolbox. It might not 
 
 ![](LULL.gif)
 
-
-![](ManyLines.gif) ![](ManyLines.gif)
-
