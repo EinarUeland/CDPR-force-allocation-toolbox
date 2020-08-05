@@ -1,0 +1,12 @@
+libemlrt.lib
+libcovrt.lib
+libut.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:mexfilerequiredapiversion
+/export:emlrtMexFcnProperties
+/export:Kernel_Methodis
+/export:emlrt_marshallOut
+/export:Kernel_Methodis_initialize
+/export:Kernel_Methodis_terminate
+/export:Kernel_Methodis_atexit

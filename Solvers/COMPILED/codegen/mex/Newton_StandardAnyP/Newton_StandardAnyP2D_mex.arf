@@ -1,0 +1,11 @@
+libemlrt.lib
+libcovrt.lib
+libut.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:mexfilerequiredapiversion
+/export:emlrtMexFcnProperties
+/export:Newton_StandardAnyP
+/export:Newton_StandardAnyP_initialize
+/export:Newton_StandardAnyP_terminate
+/export:Newton_StandardAnyP_atexit

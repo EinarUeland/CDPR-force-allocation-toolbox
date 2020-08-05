@@ -1,0 +1,65 @@
+# CompilerName=msvc150
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root\build\win64
+matlabdir = C:\Program Files\MATLAB\R2019a
+startdir = C:\Users\einarsu\OneDrive - NTNU\PHD STATE OF THE ART\PublishableCDPR_TOOLBOX\GenerateSampleFigures\COMPILED
+
+# Toolchain information
+cc = cl
+cxx = cl
+linker = link
+linkerxx = link
+
+cflags =  /c /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /I "$root" /I "$startdir" /I "$root\interface" /I "$matlabdir\extern\include" /I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS  
+
+cxxflags =   /c /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /I "$root" /I "$startdir" /I "$root\interface" /I "$matlabdir\extern\include" /I "." -DHAVE_LAPACK_CONFIG_H -DLAPACK_COMPLEX_STRUCTURE -DMW_HAVE_LAPACK_DECLS  
+
+ldflags =  /nologo /manifest   /DLL /LIBPATH:"$matlabdir\extern\lib\win64\microsoft" libmx.lib libmex.lib libmat.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  /out:"KernelMethodis_mex2.mexw64" /LIBPATH:"$matlabdir\extern\lib\win64\microsoft" libmwblas.lib libmwlapack.lib  @KernelMethodis_mex2.arf
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in /Fo$out
+
+rule cxx
+    command = $cxx $cxxflags $in /Fo$out
+
+rule link
+    command = $linker $in $ldflags
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir\Kernel_Methodis_mexutil.obj : cc $root\Kernel_Methodis_mexutil.c
+build $builddir\Kernel_Methodis_data.obj : cc $root\Kernel_Methodis_data.c
+build $builddir\Kernel_Methodis_initialize.obj : cc $root\Kernel_Methodis_initialize.c
+build $builddir\Kernel_Methodis_terminate.obj : cc $root\Kernel_Methodis_terminate.c
+build $builddir\Kernel_Methodis.obj : cc $root\Kernel_Methodis.c
+build $builddir\error.obj : cc $root\error.c
+build $builddir\eml_int_forloop_overflow_check.obj : cc $root\eml_int_forloop_overflow_check.c
+build $builddir\null.obj : cc $root\null.c
+build $builddir\anyNonFinite.obj : cc $root\anyNonFinite.c
+build $builddir\svd.obj : cc $root\svd.c
+build $builddir\infocheck.obj : cc $root\infocheck.c
+build $builddir\xgesvd.obj : cc $root\xgesvd.c
+build $builddir\eps.obj : cc $root\eps.c
+build $builddir\mldivide.obj : cc $root\mldivide.c
+build $builddir\lusolve.obj : cc $root\lusolve.c
+build $builddir\xgetrf.obj : cc $root\xgetrf.c
+build $builddir\warning.obj : cc $root\warning.c
+build $builddir\xtrsm.obj : cc $root\xtrsm.c
+build $builddir\qrsolve.obj : cc $root\qrsolve.c
+build $builddir\xgeqp3.obj : cc $root\xgeqp3.c
+build $builddir\mrdivide_helper.obj : cc $root\mrdivide_helper.c
+build $builddir\ifWhileCond.obj : cc $root\ifWhileCond.c
+build $builddir\_coder_Kernel_Methodis_info.obj : cc $root\interface\_coder_Kernel_Methodis_info.c
+build $builddir\_coder_Kernel_Methodis_api.obj : cc $root\interface\_coder_Kernel_Methodis_api.c
+build $builddir\_coder_Kernel_Methodis_mex.obj : cc $root\interface\_coder_Kernel_Methodis_mex.c
+build $builddir\c_mexapi_version.obj : cc $matlabdir\extern\version\c_mexapi_version.c
+
+# Link
+build $root\KernelMethodis_mex2.mexw64 : link $builddir\Kernel_Methodis_mexutil.obj $builddir\Kernel_Methodis_data.obj $builddir\Kernel_Methodis_initialize.obj $builddir\Kernel_Methodis_terminate.obj $builddir\Kernel_Methodis.obj $builddir\error.obj $builddir\eml_int_forloop_overflow_check.obj $builddir\null.obj $builddir\anyNonFinite.obj $builddir\svd.obj $builddir\infocheck.obj $builddir\xgesvd.obj $builddir\eps.obj $builddir\mldivide.obj $builddir\lusolve.obj $builddir\xgetrf.obj $builddir\warning.obj $builddir\xtrsm.obj $builddir\qrsolve.obj $builddir\xgeqp3.obj $builddir\mrdivide_helper.obj $builddir\ifWhileCond.obj $builddir\_coder_Kernel_Methodis_info.obj $builddir\_coder_Kernel_Methodis_api.obj $builddir\_coder_Kernel_Methodis_mex.obj $builddir\c_mexapi_version.obj 

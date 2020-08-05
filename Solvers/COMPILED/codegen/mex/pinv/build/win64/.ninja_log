@@ -1,0 +1,20 @@
+# ninja log v5
+26	173	590948139	build/win64/eml_int_forloop_overflow_check.obj	9aba2f6ad8042d0e
+9	176	590948139	build/win64/xdotc.obj	93ce8463e9cd2f1e
+4	308	590948140	build/win64/sqrt.obj	89181ed1cc1463e0
+47	313	590948140	build/win64/_coder_pinv_info.obj	b6ecca1bc64c82d6
+0	329	590948140	build/win64/_coder_pinv_mex.obj	248ce95ccd354a18
+63	334	590948140	build/win64/xnrm2.obj	54754ccd90871139
+33	341	590948140	build/win64/pinv_data.obj	aafc9f2b6d29cf66
+18	348	590948140	build/win64/pinv_initialize.obj	a8870f32c42d8b15
+56	424	590948140	build/win64/pinv.obj	e87b4e373d4ba545
+173	428	590948140	build/win64/xaxpy.obj	1ad5121c6f5d7dac
+177	941	590948140	build/win64/pinv_terminate.obj	847c8aef6ad2cbb4
+308	941	590948140	build/win64/xswap.obj	90624ead176e0c98
+40	942	590948140	build/win64/xscal.obj	4be022a750c7fe01
+349	943	590948140	build/win64/c_mexapi_version.obj	d4d50eda70215568
+314	943	590948140	build/win64/_coder_pinv_api.obj	57e1b6140102245a
+341	944	590948140	build/win64/xrotg.obj	a2f0ed2b35910403
+335	944	590948140	build/win64/xrot.obj	1a0644430419cd9f
+329	945	590948140	build/win64/svd.obj	1103aa63f111fe1a
+945	1061	590948140	pinv3D_mex.mexw64	6a047954bb8e8ed1

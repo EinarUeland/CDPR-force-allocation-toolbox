@@ -1,0 +1,11 @@
+libemlrt.lib
+libcovrt.lib
+libut.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:mexfilerequiredapiversion
+/export:emlrtMexFcnProperties
+/export:Get_JMatrix
+/export:Get_JMatrix_initialize
+/export:Get_JMatrix_terminate
+/export:Get_JMatrix_atexit

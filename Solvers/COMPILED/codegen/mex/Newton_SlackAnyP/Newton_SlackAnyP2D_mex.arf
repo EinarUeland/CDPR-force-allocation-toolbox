@@ -1,0 +1,11 @@
+libemlrt.lib
+libcovrt.lib
+libut.lib
+libmwmathutil.lib
+/export:mexFunction
+/export:mexfilerequiredapiversion
+/export:emlrtMexFcnProperties
+/export:Newton_SlackAnyP
+/export:Newton_SlackAnyP_initialize
+/export:Newton_SlackAnyP_terminate
+/export:Newton_SlackAnyP_atexit
