@@ -1,2 +1,1 @@
-* linguist-vendored
-*.mexw64 linguist-language=Java
+ *.* linguist-language=MATLAB
