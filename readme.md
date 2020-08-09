@@ -21,6 +21,5 @@ Try running *QuickExample.m* for a quick demonstration.
 
 <img src="Gif/CDPR_TEST.gif" width="500">
 
-![](Gif/ExampleTraj.gif)
 
  
