@@ -19,7 +19,7 @@ Try running *QuickExample.m* for a quick demonstration.
 
 -There is little use of internal MATLAB functions, so there should not be a need for many MATLAB packages excluding the standard ones.
 
-<img src="Gif/CDPR_TEST.gif" width="880">
+<img src="Gif/CDPR_TEST.gif" width="500">
 
 ![](Gif/ExampleTraj.gif)
 
