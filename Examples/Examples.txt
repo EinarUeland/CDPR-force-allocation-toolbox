@@ -1,0 +1,7 @@
+The following examples are from the paper 
+"Optimal Force Allocation for Overconstrained
+Cable-Driven Parallel Robots: Continuously
+Differentiable Solutions with Assessment of
+Computational Efficiency", - Ueland E, Sauder T, Skjetne R. 
+
+Please see paper for documentation.
