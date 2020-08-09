@@ -1,6 +1,6 @@
 This repository considers methods for force-allocation onto overconstrained CDPR setups.
 
-  <img src="Gif/LATEXFORMULATION.PNG" width="850" title="hover text">
+  <img src="Gif/LATEXFORMULATION.PNG" width="750" title="hover text">
 
 We refer to the paper *Optimal Force Allocation for Overconstrained Cable-Driven Parallel Robots: Continuously
 Differentiable Solutions with Assessment of Computational Efficiency*, by Ueland E, Sauder T, Skjetne R for documentation. 
