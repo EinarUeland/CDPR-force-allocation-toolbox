@@ -1,5 +1,7 @@
-This will be the repository for the CDPR-force-allocation-toolbox. It might not be updated until submittion status of corresponding paper changes.
+The following are methods and for force-allocation onto overconstrained CDPR setups.
 
+See the paper "Optimal Force Allocation for Overconstrained Cable-Driven Parallel Robots: Continuously
+Differentiable Solutions with Assessment of Computational Efficiency" for documentation. 
 
 ![](Gif/ExampleTraj.gif)
 
