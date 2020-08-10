@@ -21,7 +21,8 @@ End_effectors =...
 Eta=[0;0;0;0;0;0];
 
 %Let us draw the Figure of the CDPR;
-Print_Geometry_3D(Actuator_Bases,End_effectors,Eta,3)
+close all
+Print_Geometry_3D(Actuator_Bases,End_effectors,Eta6,3)
 
 
 %Specify actuator limitations, prefferred tension, and target force load
