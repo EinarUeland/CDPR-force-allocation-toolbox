@@ -7,6 +7,8 @@ This repository considers methods for force-allocation onto overconstrained CDPR
 We refer to the paper *Optimal Force Allocation for Overconstrained Cable-Driven Parallel Robots: Continuously
 Differentiable Solutions with Assessment of Computational Efficiency*, by Ueland E, Sauder T, Skjetne R for documentation on included methods. 
 
+##Other
+
 Try running *QuickExample.m* for a quick demonstration. 
 
 -Make sure to add the whole folder with subfolders to your MATLAB path.
